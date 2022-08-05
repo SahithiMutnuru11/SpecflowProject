@@ -1,0 +1,155 @@
+﻿2022-05-09T13:36:38.2275024+05:30;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2022-05-09T13:36:38.2325116+05:30;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\spran\source\repos\TestProject_Cyara\packages\SpecRun.Runner.1.8.5\tools\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2022-05-09T13:36:38.3474482+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2022-05-09T13:36:38.3474482+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\spran\source\repos\TestProject_Cyara\bin\Debug\TestProject_Cyara.dll
+2022-05-09T13:36:38.3474482+05:30;VSTestExecutionThread;Info;Profile: TestProject_Cyara
+2022-05-09T13:36:49.4213974+05:30;Thread#13;Info;starting test run
+2022-05-09T13:36:49.4303746+05:30;Thread#13;Info;Discovering target: Default
+2022-05-09T13:36:49.4313753+05:30;Thread#13;Info;Discovering tests from assembly: C:\Users\spran\source\repos\TestProject_Cyara\bin\Debug\TestProject_Cyara.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TestProject_Cyara/TestProject_Cyara - 
+#1: Default - 
+#2: TestProject_Cyara - 
+#3: LoginScenarios - 
+#4: Verify User login with valid credentials - TestAssembly:TestProject_Cyara/Feature:LoginScenarios/Scenario:Verify+User+login+with+valid+credentials
+#5: Verify User login with invalid credentials - TestAssembly:TestProject_Cyara/Feature:LoginScenarios/Scenario:Verify+User+login+with+invalid+credentials
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TestProject_Cyara, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I navigate to url - 'SwengLabs'
+Thread#0:T:done: LoginScenariosSteps.GivenINavigatetoUrl("SwengLabs") (0.8s)
+Thread#0:B:Then I verify login page
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyLoginPage() (0.1s)
+Thread#0:B:When I enter user credentials
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | userName      | password     |
+Thread#0:B:  | standard_user | secret_sauce |
+Thread#0:T:done: LoginScenariosSteps.WhenIEnterUserCred(<table>) (1.4s)
+Thread#0:B:Then I verify login successful
+Thread#0:T:An assertion failed.
+Thread#0:T:User is not logged in
+Thread#0:T:   at TestProject_Cyara.Pages.LoginPage.verifyloginSuccessful(
+Thread#0:T:) in 
+Thread#0:T:C:\Users\spran\source\repos\TestProject_Cyara\Pages\LoginPage.cs:line 88
+Thread#0:T:   at TestProject_Cyara.LoginScenariosSteps.ThenIVerifyLoginSuccessful(
+Thread#0:T:) in 
+Thread#0:T:C:\Users\spran\source\repos\TestProject_Cyara\Steps\LoginScenariosSteps.cs:line 80
+Thread#0:T:   at lambda_method(Closure , IContextManager )
+Thread#0:T:   at System.Delegate.DynamicInvokeImpl(Object[] args)
+Thread#0:T:   at System.Delegate.DynamicInvoke(Object[] args)
+Thread#0:T:   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+Thread#0:T:   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+Thread#0:T:   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+Thread#0:T:   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+Thread#0:T:   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Step(StepDefinitionKeyword stepDefinitionKeyword, String keyword, String text, String multilineTextArg, Table tableArg)
+Thread#0:T:   at TechTalk.SpecFlow.TestRunner.Then(String text, String multilineTextArg, Table tableArg, String keyword)
+Thread#0:T:   at TestProject_Cyara.Features.LoginScenariosFeature.VerifyUserLoginWithValidCredentials(
+Thread#0:T:) in 
+Thread#0:T:C:\Users\spran\source\repos\TestProject_Cyara\Features\LoginScenarios.feature:line 10
+Thread#0:T:   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.InvokeInstance(MethodInfo methodInfo, Object instance)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.ExecuteTestNodeTask(TestNode testNode, ITaskExecutor task, TraceEventType eventType)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage(IMessage reqMsg)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage(IMessage reqMsg)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback(Object[] args)
+Thread#0:T:   at System.Threading.Thread.CompleteCrossContextCallback(InternalCrossContextDelegate ftnToCall, Object[] args)
+Thread#0:T:   at System.Threading.Thread.InternalCrossContextCallback(Context ctx, IntPtr ctxID, Int32 appDomainID, InternalCrossContextDelegate ftnToCall, Object[] args)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessage(IMessage reqMsg)
+Thread#0:T:   at System.Runtime.Remoting.Channels.ChannelServices.SyncDispatchMessage(IMessage msg)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossAppDomainSink.DoDispatch(Byte[] reqStmBuff, SmuggledMethodCallMessage smuggledMcm, SmuggledMethodReturnMessage& smuggledMrm)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossAppDomainSink.DoTransitionDispatchCallback(Object[] args)
+Thread#0:T:   at System.Threading.Thread.CompleteCrossContextCallback(InternalCrossContextDelegate ftnToCall, Object[] args)
+Thread#0:T:error: An assertion failed.
+Thread#0:T:User is not logged in
+Thread#0:T:   at TestProject_Cyara.Pages.LoginPage.verifyloginSuccessful() in C:\Users\spran\source\repos\TestProject_Cyara\Pages\LoginPage.cs:line 88
+Thread#0:T:   at TestProject_Cyara.LoginScenariosSteps.ThenIVerifyLoginSuccessful() in C:\Users\spran\source\repos\TestProject_Cyara\Steps\LoginScenariosSteps.cs:line 80
+Thread#0:T:   at lambda_method(Closure , IContextManager )
+Thread#0:T:   at System.Delegate.DynamicInvokeImpl(Object[] args)
+Thread#0:T:   at System.Delegate.DynamicInvoke(Object[] args)
+Thread#0:T:   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+Thread#0:T:   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+Thread#0:T:   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+Thread#0:T:   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+Thread#0:T:   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.Step(StepDefinitionKeyword stepDefinitionKeyword, String keyword, String text, String multilineTextArg, Table tableArg)
+Thread#0:T:   at TechTalk.SpecFlow.TestRunner.Then(String text, String multilineTextArg, Table tableArg, String keyword)
+Thread#0:T:   at TestProject_Cyara.Features.LoginScenariosFeature.VerifyUserLoginWithValidCredentials() in C:\Users\spran\source\repos\TestProject_Cyara\Features\LoginScenarios.feature:line 10
+Thread#0:T:   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.InvokeInstance(MethodInfo methodInfo, Object instance)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.ExecuteTestNodeTask(TestNode testNode, ITaskExecutor task, TraceEventType eventType)
+Thread#0:T:   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.RunTests(TestThreadState testThreadState)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.ServerObjectTerminatorSink.SyncProcessMessage(IMessage reqMsg)
+Thread#0:T:   at System.Runtime.Remoting.Messaging.ServerContextTerminatorSink.SyncProcessMessage(IMessage reqMsg)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessageCallback(Object[] args)
+Thread#0:T:   at System.Threading.Thread.CompleteCrossContextCallback(InternalCrossContextDelegate ftnToCall, Object[] args)
+Thread#0:T:   at System.Threading.Thread.InternalCrossContextCallback(Context ctx, IntPtr ctxID, Int32 appDomainID, InternalCrossContextDelegate ftnToCall, Object[] args)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossContextChannel.SyncProcessMessage(IMessage reqMsg)
+Thread#0:T:   at System.Runtime.Remoting.Channels.ChannelServices.SyncDispatchMessage(IMessage msg)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossAppDomainSink.DoDispatch(Byte[] reqStmBuff, SmuggledMethodCallMessage smuggledMcm, SmuggledMethodReturnMessage& smuggledMrm)
+Thread#0:T:   at System.Runtime.Remoting.Channels.CrossAppDomainSink.DoTransitionDispatchCallback(Object[] args)
+Thread#0:T:   at System.Threading.Thread.CompleteCrossContextCallback(InternalCrossContextDelegate ftnToCall, Object[] args)
+Thread#0:TestItem#4:Scheduler: reschedule tests for testitem #4
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Failed within 6.0339554 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I navigate to url - 'SwengLabs'
+Thread#0:T:done: LoginScenariosSteps.GivenINavigatetoUrl("SwengLabs") (0.7s)
+Thread#0:B:Then I verify login page
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyLoginPage() (0.1s)
+Thread#0:B:When I enter user credentials
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | userName      | password |
+Thread#0:B:  | standard_user | abcde123 |
+Thread#0:T:done: LoginScenariosSteps.WhenIEnterUserCred(<table>) (0.7s)
+Thread#0:B:Then I Verify error message - 'Username and password do not match any user'
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyerrorMessage("Username and pass...") (0.1s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 4.1887236 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2022-05-09T13:37:00.2476147+05:30;Thread#13;Info;test run finished
+2022-05-09T13:37:00.2486137+05:30;Thread#13;Info;publishing test results
+2022-05-09T13:37:00.2596069+05:30;Thread#13;Info;test results published
+2022-05-09T13:37:00.2596069+05:30;Thread#13;Info;generating reports
+2022-05-09T13:37:00.2686015+05:30;Thread#13;Info;creating 1 report(s)
+2022-05-09T13:37:00.2686015+05:30;Thread#13;Info;generate Report ReportTemplate.cshtml
+2022-05-09T13:37:02.5467617+05:30;Thread#13;Info;reports generated
+Total: 2
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
+2022-05-09T13:37:02.5507761+05:30;VSTestExecutionThread;Info;Adding attachments to VSTest
+2022-05-09T13:37:02.5517591+05:30;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\spran\source\repos\TestProject_Cyara\TestResults\TestProject_Cyara_TestProject_Cyara_2022-05-09T133638.html'
+2022-05-09T13:37:02.6007314+05:30;VSTestExecutionThread;Info;Log file: file:///C:\Users\spran\source\repos\TestProject_Cyara\TestResults\TestProject_Cyara_TestProject_Cyara_2022-05-09T133638.log

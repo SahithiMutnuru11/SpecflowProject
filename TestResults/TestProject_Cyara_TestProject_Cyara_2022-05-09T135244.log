@@ -1,0 +1,87 @@
+﻿2022-05-09T13:52:44.7087661+05:30;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2022-05-09T13:52:44.7137645+05:30;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\spran\source\repos\TestProject_Cyara\packages\SpecRun.Runner.1.8.5\tools\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2022-05-09T13:52:44.9225949+05:30;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2022-05-09T13:52:44.9225949+05:30;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\spran\source\repos\TestProject_Cyara\bin\Debug\TestProject_Cyara.dll
+2022-05-09T13:52:44.9225949+05:30;VSTestExecutionThread;Info;Profile: TestProject_Cyara
+2022-05-09T13:52:56.1516511+05:30;Thread#13;Info;starting test run
+2022-05-09T13:52:56.1881414+05:30;Thread#13;Info;Discovering target: Default
+2022-05-09T13:52:56.1881414+05:30;Thread#13;Info;Discovering tests from assembly: C:\Users\spran\source\repos\TestProject_Cyara\bin\Debug\TestProject_Cyara.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TestProject_Cyara/TestProject_Cyara - 
+#1: Default - 
+#2: TestProject_Cyara - 
+#3: LoginScenarios - 
+#4: Verify User login with valid credentials - TestAssembly:TestProject_Cyara/Feature:LoginScenarios/Scenario:Verify+User+login+with+valid+credentials
+#5: Verify User login with invalid credentials - TestAssembly:TestProject_Cyara/Feature:LoginScenarios/Scenario:Verify+User+login+with+invalid+credentials
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TestProject_Cyara, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I navigate to url - 'SwengLabs'
+Thread#0:T:done: LoginScenariosSteps.GivenINavigatetoUrl("SwengLabs") (0.9s)
+Thread#0:B:Then I verify login page
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyLoginPage() (0.1s)
+Thread#0:B:When I enter user credentials
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | userName      | password     |
+Thread#0:B:  | standard_user | secret_sauce |
+Thread#0:T:done: LoginScenariosSteps.WhenIEnterUserCred(<table>) (1.9s)
+Thread#0:B:Then I verify login successful
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyLoginSuccessful() (0.8s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 7.9297416 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I navigate to url - 'SwengLabs'
+Thread#0:T:done: LoginScenariosSteps.GivenINavigatetoUrl("SwengLabs") (0.8s)
+Thread#0:B:Then I verify login page
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyLoginPage() (0.1s)
+Thread#0:B:When I enter user credentials
+Thread#0:B:  --- table step argument ---
+Thread#0:B:  | userName      | password |
+Thread#0:B:  | standard_user | abcde123 |
+Thread#0:T:done: LoginScenariosSteps.WhenIEnterUserCred(<table>) (0.6s)
+Thread#0:B:Then I Verify error message - 'Username and password do not match any user'
+Thread#0:T:done: LoginScenariosSteps.ThenIVerifyerrorMessage("Username and pass...") (0.1s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 4.0445556 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2022-05-09T13:53:09.2233736+05:30;Thread#13;Info;test run finished
+2022-05-09T13:53:09.2233736+05:30;Thread#13;Info;publishing test results
+2022-05-09T13:53:09.3343124+05:30;Thread#13;Info;test results published
+2022-05-09T13:53:09.3343124+05:30;Thread#13;Info;generating reports
+2022-05-09T13:53:09.3423092+05:30;Thread#13;Info;creating 1 report(s)
+2022-05-09T13:53:09.3423092+05:30;Thread#13;Info;generate Report ReportTemplate.cshtml
+2022-05-09T13:53:12.0806659+05:30;Thread#13;Info;reports generated
+Total: 2
+Succeeded: 2
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
+2022-05-09T13:53:12.0836637+05:30;VSTestExecutionThread;Info;Adding attachments to VSTest
+2022-05-09T13:53:12.0846633+05:30;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\spran\source\repos\TestProject_Cyara\TestResults\TestProject_Cyara_TestProject_Cyara_2022-05-09T135244.html'
+2022-05-09T13:53:12.1166452+05:30;VSTestExecutionThread;Info;Log file: file:///C:\Users\spran\source\repos\TestProject_Cyara\TestResults\TestProject_Cyara_TestProject_Cyara_2022-05-09T135244.log
