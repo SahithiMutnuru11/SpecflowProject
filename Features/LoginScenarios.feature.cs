@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace TestProject_Cyara.Features
+namespace Specflow_CSharpProject.Features
 {
     using TechTalk.SpecFlow;
     
@@ -118,6 +118,8 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I enter user credentials", ((string)(null)), table2, "When ");
 #line 19
  testRunner.Then("I Verify error message - \'Username and password do not match any user\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 20
+ testRunner.Then("I Verify TestPage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

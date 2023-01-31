@@ -17,3 +17,4 @@ Scenario: Verify User login with invalid credentials
 	| userName      | password     |
 	| standard_user | abcde123 |
 	Then I Verify error message - 'Username and password do not match any user'
+	Then I Verify TestPage
