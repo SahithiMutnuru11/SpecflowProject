@@ -1,17 +1,17 @@
 @pushd %~dp0
 
-@where /q msbuild
+
 
 @IF ERRORLEVEL 1 (
 	echo "MSBuild is not in your PATH. Please use a developer command prompt!"
 	goto :end
 ) ELSE (
-	MSBuild.exe "TestProject_Cyara.csproj"
+	"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe" "Specflow_CSharpProject.csproj"
 )
 
 @if ERRORLEVEL 1 goto end
 
-@cd ..\packages\SpecRun.Runner.*\tools
+@cd packages\SpecRun.Runner.*\tools\
 
 @set profile=%1
 @if "%profile%" == "" set profile=Default
