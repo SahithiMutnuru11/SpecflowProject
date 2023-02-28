@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Specflow_CSharpProject.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -18,6 +19,7 @@ namespace Specflow_CSharpProject.Base
         public static string directory = null;
         public static string browserName = "Chrome";
         private static ChromeOptions options = new ChromeOptions();
+        static Utility utility = new Utility();
 
         [BeforeScenario]
         public static void Initialization()
@@ -25,11 +27,12 @@ namespace Specflow_CSharpProject.Base
             string browser = (ConfigurationManager.GetSection("BROWSER") as System.Collections.Specialized.NameValueCollection)[browserName];
             if (browser.Equals("chrome"))
             {
-                directory = Directory.GetParent(System.AppDomain.CurrentDomain.BaseDirectory).Parent.FullName;
+                directory = utility.getDirectory();
 
                 options.AddArguments("--disable-background-mode");
                 options.AddArguments("--disable-extentions");
-                driver = new ChromeDriver(directory + "\\Drivers", options);
+                //options.AddArguments("--headless");
+                driver = new ChromeDriver(utility.GetDriverLocation(), options);
             }
 
             if (ScenarioContext.Current.ContainsKey("driver"))
@@ -38,13 +41,28 @@ namespace Specflow_CSharpProject.Base
             }
 
             ScenarioContext.Current.Add("driver", driver);
+            //ScenarioContext.Current.get["driver"];
         }
 
         [AfterScenario]
         public static void QuitDriver()
         {
             driver = (IWebDriver)ScenarioContext.Current["driver"];
-            driver.Quit();
+            try
+            {
+                if (ScenarioContext.Current.TestError != null)
+                {
+                    utility.GetScreenshot(driver);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                driver.Quit();
+            }
         }
     }
 }

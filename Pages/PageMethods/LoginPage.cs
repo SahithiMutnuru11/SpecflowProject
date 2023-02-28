@@ -77,7 +77,7 @@ namespace Specflow_CSharpProject.Pages
                 //Assert.Fail("menu is not loaded");
             }
             
-            if (IsDisplayed(LoginPageLocators.logout))
+            if (IsDisplayed(LoginPageLocators.samp("Logout")))
                 log.Info("User is logged in");
             else
             {

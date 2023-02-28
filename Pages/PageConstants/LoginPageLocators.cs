@@ -17,5 +17,10 @@ namespace Specflow_CSharpProject.Pages.PageConstants
         public static readonly By logout = By.XPath("//a[text()='Logout']");
         public static readonly By error = By.XPath("//div[@class='error-message-container error']");
         public static readonly By errorText = By.XPath("//div[@class='error-message-container error']//h3");
+
+        public static By samp(string text)
+        {
+            return By.XPath($"//a[text()='{text}']");
+        }
     }
 }

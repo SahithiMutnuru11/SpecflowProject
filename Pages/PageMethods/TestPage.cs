@@ -1,4 +1,5 @@
 ﻿using log4net;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using Specflow_CSharpProject.Utilities;
 using System;
@@ -23,6 +24,7 @@ namespace Specflow_CSharpProject.Pages.PageMethods
         {
             Console.WriteLine("I'm in sample");
             log.Info("I'm in sample");
+            Assert.Fail("Failing to check screenshot");
         }
     }
 }
